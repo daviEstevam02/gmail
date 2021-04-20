@@ -6,6 +6,7 @@ export const Conteiner = styled.div`
 
     .content{
         .writte{
+
             background-color: #ffffff;
             max-width: 160px;
             height:55px;
@@ -15,7 +16,15 @@ export const Conteiner = styled.div`
             align-items: center;
             justify-content:center;
 
-            margin: 20px 0 10px 25px;
+            margin: 20px 0 10px 15px;
+
+            .title{
+                margin-left:10px;
+                font-size: 15px;
+            }
+            img{
+                width:35px;
+            }
 
         }
         button{
@@ -36,11 +45,19 @@ export const Conteiner = styled.div`
             margin: 10px 0 0 20px;
 
             font-size: 17px;    
-
-            .title{
-                margin-left: 20px;
-            }
         }
 
+        .menu-titles{
+            margin-left:10px;
+            font-size:16px;
+        }
+
+        .menu-buttons:hover{
+            cursor: pointer;
+
+            background-color:#ffffff;
+
+            border-radius: 20px;
+        }
     }
 `;

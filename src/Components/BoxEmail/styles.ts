@@ -2,10 +2,13 @@ import styled from 'styled-components';
 
 export const Conteiner = styled.div`
 
-    margin: -240px 0 0 300px;
-    max-width:1520px;
+    margin: -230px 0 0 250px;
+    max-width:1550px;
+
+    background-color:#ffffff;
 
     .header{
+        max-width: 100%;
         display: flex;
         align-items: center;
 
@@ -22,11 +25,15 @@ export const Conteiner = styled.div`
         display:flex;
         align-items:center;
         
-        margin-left:15px;
 
         p{
             font-size: 17px;
             margin-left: 20px;
+        }
+        .aba-content{
+            display: flex;
+            align-items:center;
+            margin-left:5px;
         }
     }
     .abas:hover{
@@ -38,7 +45,7 @@ export const Conteiner = styled.div`
 
 export const Content = styled.div`
 
-    max-width:1520px;
+    max-width:1550px;
 
     border: 1px solid #dcdce6;
 
@@ -49,10 +56,17 @@ export const Content = styled.div`
 
         cursor: pointer;
 
-        margin-left:20px;
+        width: 100%;
+        .content-box{
+            margin-left:10px;
+            display: flex;
+            align-items: center;
+        }
+
     }
     .email-preview:hover{
         background:#D7D9DB;
+        box-shadow: 0 3px 6px rgba(0,0.10,0,0.10), 0 3px 6px rgba(0,0.10,0,0.10);
     }
     p{
         margin-left:10px;

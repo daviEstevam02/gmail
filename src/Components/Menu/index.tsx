@@ -1,6 +1,8 @@
 import { Conteiner } from './styles';
-import { FiInbox } from 'react-icons/fi'
-import { AiOutlinePlus } from 'react-icons/ai'
+import { HiOutlineInbox } from 'react-icons/hi'
+import { AiOutlineStar } from 'react-icons/ai'
+import { BiTimeFive } from 'react-icons/bi'
+import{ FiSend } from 'react-icons/fi'
 
 
 export function Menu(){
@@ -9,28 +11,37 @@ export function Menu(){
 
             <div className="content">
 
-                <div className="writte">
-                    <AiOutlinePlus />
-                    <div className="title">
-                    Escrever
-                    </div>
-                </div>
+                <button className="writte">
+                    <img src="https://www.gstatic.com/images/icons/material/colored_icons/1x/create_32dp.png" alt=""/>
+                    <p className="title">
+                        Escrever
+                    </p>
+                </button>
 
-                <button>
-                    <FiInbox size={25}/>
-                    Caixa de Entrada
+                <button className="menu-buttons">
+                    <HiOutlineInbox size={25}/>
+                    <p className="menu-titles">
+                        Caixa de Entrada
+                    </p>
                 </button>
-                <button>
-                    <FiInbox size={25}/>
-                   Com Estrela
+                <button className="menu-buttons">
+                    <AiOutlineStar size={25}/>
+                    <p className="menu-titles">
+                    Com Estrela
+                    </p>
                 </button>
-                <button>
-                    <FiInbox size={25}/>
-                   Adiados
+                <button className="menu-buttons">
+                    <BiTimeFive size={25}/>
+                    <p className="menu-titles">
+                        Adiados
+                    </p>
                 </button>
-                <button>
-                    <FiInbox size={25}/>
+                <button className="menu-buttons">
+                    <FiSend size={25}/>
+                    <p className="menu-titles">
                     Enviados
+                    </p>
+                    
                 </button>
 
 
